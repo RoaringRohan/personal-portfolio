@@ -1,5 +1,5 @@
 import './index.scss';
-import Picture from '../../../assets/images/IMG_0014.jpg';
+import Picture from '../../../assets/images/selfie.png';
 
 const Portrait = () => {
     return (

@@ -1,5 +1,5 @@
 import './index.scss';
-import Portrait from './Portrait';
+//import Portrait from './Portrait';
 import Projects from './Projects';
 
 const Home = () => {
@@ -18,7 +18,6 @@ const Home = () => {
                     Here's all the projects that I've worked on in the past.
                 </p>
             </div>
-            <Portrait />
             <Projects />
         </div>
         </>
@@ -26,3 +25,6 @@ const Home = () => {
 }
 
 export default Home;
+
+// Insert this when ready to start working on profile pic in homepage
+//<Portrait />

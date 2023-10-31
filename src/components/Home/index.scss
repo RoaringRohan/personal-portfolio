@@ -8,6 +8,7 @@
         max-height: 100%;
     }
 
+    /* MAKE SURE TO USE REM NOT PX OR % IN YOUR FONT SIZE */
     h1 {
         color: #000000;
         font-size: 56px;
@@ -18,12 +19,5 @@
         color: #000000;
         margin-top: 20px;
         letter-spacing: 3px;
-    }
-
-    .portrait-container {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        display: inline;
     }
 }
