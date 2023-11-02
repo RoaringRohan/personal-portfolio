@@ -1,11 +1,13 @@
 import './index.scss';
 //import Portrait from './Portrait';
 import Projects from './Projects';
+import Nav from '../Nav';
 
 const Home = () => {
 
     return (
         <>
+        <Nav />
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
