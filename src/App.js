@@ -1,12 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Home from './components/Home';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <>
     <Routes>
-      <Route index element={<Home />} />
+      <Route path="/" element={<Nav />} >
+        <Route index element={<Home />} />
+      </Route>
     </Routes>
     </>
   );

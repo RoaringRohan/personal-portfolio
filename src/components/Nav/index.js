@@ -3,9 +3,8 @@ import './index.scss';
 const Nav = () => {
 
     return (
-        <>
-        <div className="container navbar">
-            <div className="text-zone">
+        <div className="App">
+            <div className="navbar">
                 <ul>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">About</a></li>
@@ -14,7 +13,6 @@ const Nav = () => {
                 </ul>
             </div>
         </div>
-        </>
     );
 }
 
