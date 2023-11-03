@@ -6,10 +6,9 @@ import Nav from './components/Nav';
 function App() {
   return (
     <>
+    <Nav />
     <Routes>
-      <Route path="/" element={<Nav />} >
-        <Route index element={<Home />} />
-      </Route>
+        <Route index path="/" element={<Home />} />
     </Routes>
     </>
   );
