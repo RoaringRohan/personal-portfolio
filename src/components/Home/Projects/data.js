@@ -4,22 +4,22 @@ import ImageRecog from '../../../assets/images/NumberIdentificationPython.png';
 export const Data = [
     {
       picture: SchoolProject,
-      projectName: 'Music Playlist Application',
-      answer: 'Made an application'
+      name: 'Music Playlist Application',
+      description: 'Made an application'
     },
     {
       picture: SchoolProject,
-      projectName: 'Course Outline Management Application',
-      answer: 'Made an application'
+      name: 'Course Outline Management Application',
+      description: 'Made an application'
     },
     {
       picture: SchoolProject,
-      projectName: 'Service Ticket Management Application',
-      answer: 'Made an application'
+      name: 'Service Ticket Management Application',
+      description: 'Made an application'
     },
     {
       picture: ImageRecog,
-      projectName: 'Image Recognition Application',
-      answer: 'Made an application'
+      name: 'Image Recognition Application',
+      description: 'Made an application'
     }
   ];

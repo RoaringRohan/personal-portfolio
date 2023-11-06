@@ -1,37 +1,53 @@
 import './index.scss';
-import React, { useState } from 'react';
+import React from 'react';
+import SchoolProject from '../../../assets/images/SchoolProject.png';
 import { Data } from './data';
-import { FiPlus, FiMinus } from 'react-icons/fi';
+import HorizontalScroll from "./horizontal-scroll";
+import styled from "styled-components";
+
+const HorizontalSection = styled.section`
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 700px;
+`;
+
+const CardsContainer = styled.div`
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
+const SampleCard = styled.div`
+  position: relative;
+  height: 300px;
+  width: 500px;
+  background-color: #111f30;
+  margin-right: 75px;
+  flex-shrink: 0;
+`;
+
+const SampleCards = React.memo(() =>
+  Array(5)
+    .fill(0)
+    .map((_e, i) => <SampleCard key={`sampleCard-${i}`} />)
+);
 
 const Projects = () => {
-    const [clicked, setClicked] = useState(false);
-
-    const toggle = index => {
-        if (clicked === index) {
-            return setClicked(null);
-        }
-
-        setClicked(index);
-    };
 
     return (
-        <div className="projects-container">
-            {Data.map((item, index) => {
-                return (
-                    <>
-                    <div className='wrap' onClick={() => toggle(index)} key={index}>
-                        <img src={item.picture} alt="Project Visual" />
-                        <p>{item.projectName}</p>
-                        <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
-                    </div>
-                    {clicked === index ? (
-                        <div className='dropdown'>
-                            <p>{item.answer}</p>
-                        </div>
-                    ) : null}
-                    </>
-                );
-            })}
+        <div className="projects">
+            <HorizontalSection>
+        <HorizontalScroll>
+          <CardsContainer>
+            <SampleCards />
+          </CardsContainer>
+        </HorizontalScroll>
+      </HorizontalSection>
         </div>
     );
 }
