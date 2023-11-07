@@ -1,37 +1,58 @@
 import './index.scss';
 import React, { useState } from 'react';
 import { Data } from './data';
-import { FiPlus, FiMinus } from 'react-icons/fi';
 
 const Projects = () => {
-    const [clicked, setClicked] = useState(false);
-
-    const toggle = index => {
-        if (clicked === index) {
-            return setClicked(null);
-        }
-
-        setClicked(index);
-    };
-
     return (
-        <div className="projects-container">
-            {Data.map((item, index) => {
-                return (
-                    <>
-                    <div className='wrap' onClick={() => toggle(index)} key={index}>
-                        <img src={item.picture} alt="Project Visual" />
-                        <p>{item.projectName}</p>
-                        <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
+        <div class="accordion">
+
+            <div class="box a1">
+                <div class="image_1">
+                    <div class="text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum iaculis nisl sed dictum aliquam.
+                        </p>
                     </div>
-                    {clicked === index ? (
-                        <div className='dropdown'>
-                            <p>{item.answer}</p>
-                        </div>
-                    ) : null}
-                    </>
-                );
-            })}
+                </div>
+            </div>
+
+            <div class="box a2">
+                <div class="image_2">
+                    <div class="text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum iaculis nisl sed dictum aliquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box a3">
+                <div class="image_3">
+                    <div class="text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum iaculis nisl sed dictum aliquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box a4">
+                <div class="image_4">
+                    <div class="text">
+                        <h2>Lorem Ipsum</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum iaculis nisl sed dictum aliquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
