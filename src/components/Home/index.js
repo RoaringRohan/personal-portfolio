@@ -18,7 +18,9 @@ const Home = () => {
                     Here's all the projects that I've worked on in the past.
                 </p>
             </div>
-            <Projects />
+            <div className="gap">
+
+            </div>
         </div>
         </>
     );

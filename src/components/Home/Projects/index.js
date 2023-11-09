@@ -1,6 +1,5 @@
 import './index.scss';
-import React, { useState } from 'react';
-import { Data } from './data';
+import React from 'react';
 
 const Projects = () => {
     return (
