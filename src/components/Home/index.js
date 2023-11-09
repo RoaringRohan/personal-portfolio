@@ -1,6 +1,6 @@
 import './index.scss';
 //import Portrait from './Portrait';
-import Projects from './Projects';
+//import Projects from './Projects';
 
 const Home = () => {
 
