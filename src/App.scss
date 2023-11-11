@@ -1,3 +1,38 @@
 $primary-color: RGB(255, 233, 234);
 
 @import 'animate.css';
+
+@font-face {
+    font-family: 'Libre Franklin Variable';
+    src: url('./assets/fonts/LibreFranklin-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Franklin Thin';
+    src: url('./assets/fonts/LibreFranklin-Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Franklin Semi Bold';
+    src: url('./assets/fonts/LibreFranklin-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Franklin Regular';
+    src: url('./assets/fonts/LibreFranklin-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Franklin Medium';
+    src: url('./assets/fonts/LibreFranklin-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
