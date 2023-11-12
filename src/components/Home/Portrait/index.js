@@ -9,11 +9,12 @@ import Pix6 from '../../../assets/images/pix-6.png';
 
 const Portrait = () => {
     const [showImage, setShowImage] = useState(1);
+    const [hasLoaded, setHasLoaded] = useState(false);
 
     useEffect(() => {
         const glitchTimer = setTimeout(() => {
             setShowImage(2);
-        }, 250); // Faster transition between glitch images
+        }, 250);
 
         setTimeout(() => {
             setShowImage(3);
@@ -33,6 +34,7 @@ const Portrait = () => {
 
         setTimeout(() => {
             setShowImage(0);
+            setHasLoaded(true);
         }, 1500);
 
         return () => clearTimeout(glitchTimer);
@@ -58,7 +60,7 @@ const Portrait = () => {
     };
 
     return (
-        <div className="portrait-container">
+        <div className={`portrait-container ${hasLoaded ? 'loaded' : ''}`}>
             <div className="glitch-effect">
                 {renderGlitchImage(showImage)}
             </div>

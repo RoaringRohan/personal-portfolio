@@ -2,13 +2,15 @@
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 45%;
+        top: 35%;
         transform: translateY(-50%);
         width: 40%;
         max-height: 100%;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        transform: translateY(-50px);
     }
 
-    /* MAKE SURE TO USE REM NOT PX OR % IN YOUR FONT SIZE */
     h1 {
         color: #000000;
         font-size: 56px;
@@ -29,11 +31,30 @@
         position: absolute;
         top: 120%;
         left: 10%;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        transform: translateY(-10px);
     }
 
     .portrait {
         position: absolute;
         left: 60%;
         top: 25%;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    .project-accordion {
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    &.loaded {
+        .portrait, .text-zone, .project-intro, .project-accordion {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

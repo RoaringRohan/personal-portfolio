@@ -1,14 +1,18 @@
 .navbar {
     position: fixed;
-    top: 0;
+    top: -100px; /* Initial position off-screen */
     width: 100%;
     background: white;
     z-index: 100;
-    transition: transform 0.3s, opacity 0.3s;
+    transition: top 0.5s ease, transform 0.3s, opacity 0.3s;
 
     &.hidden {
         transform: translateY(-100%);
         opacity: 0;
+    }
+
+    &.loaded {
+        top: 0; /* Move into regular position when loaded */
     }
 
     .logo-container {

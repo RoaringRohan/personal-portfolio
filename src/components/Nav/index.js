@@ -20,10 +20,21 @@ const Nav = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+    }, []); // Empty dependency array to run this effect only once
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        // Simulating a loading delay for demonstration
+        const timeout = setTimeout(() => {
+            setIsLoaded(true);
+        }, 500);
+
+        return () => clearTimeout(timeout);
     }, []);
 
     return (
-        <div className={`navbar ${isNavVisible ? '' : 'hidden'}`}>
+        <div className={`navbar ${isLoaded ? 'loaded' : ''} ${isNavVisible ? '' : 'hidden'}`}>
             <ul>
                 <li><NavLink exact to="/experience">Experience</NavLink></li>
                 <li><NavLink exact to="/about">About</NavLink></li>
