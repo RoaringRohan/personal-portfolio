@@ -1,11 +1,12 @@
-html {
-    height: 100vh;
+.project-container {
+    margin-top: 75rem; /* Shift the Projects component down by 20rem */
 }
-body {
+
+.accordion body {
     padding: 0;
     margin-top: 60%;
     font-family: sans-serif;
-    background: linear-gradient( #fff, #fefefe, #eaeaea);
+    
 }
 .accordion {
     max-width: 990px;
@@ -46,7 +47,7 @@ body {
     color: #fff;
 }
 
-p {
+.accordion p {
     font-weight: normal;
     font-family: 'Exo 2', sans-serif;
 }
@@ -59,7 +60,7 @@ p {
 .box:hover .text{
     opacity:1;
 }
-h1 {
+.accordion h1 {
     width: 250px;
     text-align: center;
     margin: 100px auto 20px auto;
