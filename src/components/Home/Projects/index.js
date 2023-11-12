@@ -8,7 +8,7 @@ const Projects = () => {
                 <div class="box a1">
                     <div class="image_1">
                         <div class="text">
-                            <h2>Lorem Ipsum</h2>
+                            <h2>Music Playlist Application</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Vestibulum iaculis nisl sed dictum aliquam.
@@ -20,7 +20,7 @@ const Projects = () => {
                 <div class="box a2">
                     <div class="image_2">
                         <div class="text">
-                            <h2>Lorem Ipsum</h2>
+                            <h2>Course Outline Management Application</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Vestibulum iaculis nisl sed dictum aliquam.
@@ -32,7 +32,7 @@ const Projects = () => {
                 <div class="box a3">
                     <div class="image_3">
                         <div class="text">
-                            <h2>Lorem Ipsum</h2>
+                            <h2>Service Ticket Management Application</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Vestibulum iaculis nisl sed dictum aliquam.
@@ -44,7 +44,7 @@ const Projects = () => {
                 <div class="box a4">
                     <div class="image_4">
                         <div class="text">
-                            <h2>Lorem Ipsum</h2>
+                            <h2>Image Recognition Application</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Vestibulum iaculis nisl sed dictum aliquam.
