@@ -1,11 +1,14 @@
 import './index.scss';
-//import Portrait from './Portrait';
+import Portrait from './Portrait';
 import Projects from './Projects';
 
 const Home = () => {
     return (
         <>
             <div className="container home-page">
+                <div className="portrait">
+                    <Portrait />
+                </div>
                 <div className="text-zone">
                     <h1>
                         <span>Hey,</span>
@@ -15,9 +18,9 @@ const Home = () => {
                     <h2>Software Engineer / Full-Stack Developer</h2>
                 </div>
                 <div className="project-intro">
-                    <p>
+                    <h3>
                         Here's all the projects that I've worked on in the past.
-                    </p>
+                    </h3>
                 </div>
                 <div className="project-accordion">
                     <Projects />

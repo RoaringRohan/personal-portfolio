@@ -2,7 +2,7 @@
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 40%;
+        top: 45%;
         transform: translateY(-50%);
         width: 40%;
         max-height: 100%;
@@ -21,9 +21,19 @@
         letter-spacing: 3px;
     }
 
+    h3 {
+        font-size: 2rem;
+    }
+
     .project-intro {
         position: absolute;
         top: 120%;
         left: 10%;
+    }
+
+    .portrait {
+        position: absolute;
+        left: 60%;
+        top: 25%;
     }
 }
