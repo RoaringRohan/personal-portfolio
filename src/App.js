@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Layout from './components/Layout';
 import Home from './components/Home';
-import Experience from './components/Experience';
+import Work from './components/Work';
 import About from './components/About';
 import Hobbies from './components/Hobbies';
 import Contact from './components/Contact';
@@ -14,7 +14,7 @@ function App() {
     <Layout>
       <Routes>
           <Route index path="/" element={<Home />} />
-          <Route path="experience" element={<Experience />} />
+          <Route path="work" element={<Work />} />
           <Route path="about" element={<About />} />
           <Route path="hobbies" element={<Hobbies />} />
           <Route path="contact" element={<Contact />} />

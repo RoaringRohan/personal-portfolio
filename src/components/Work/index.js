@@ -1,7 +1,7 @@
 import './index.scss';
 import Timeline from './Timeline';
 
-const Experience = () => {
+const Work = () => {
 
     return (
         <div className="container experience">
@@ -15,4 +15,4 @@ const Experience = () => {
     );
 }
 
-export default Experience;
+export default Work;
