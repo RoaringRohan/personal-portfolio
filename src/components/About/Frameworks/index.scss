@@ -1,0 +1,112 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 5px;
+}
+
+.skill {
+    list-style: none;
+    width: 500px;
+    color: black;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    background-color: rgba(245, 197, 176, 1);
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.skill li {
+    padding: 5px;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(170, 165, 225, 1) 0%, rgba(252, 103, 103, 1) 100%);
+}
+
+.java {
+    width: 90%;
+    animation: java 3s;
+}
+
+.python {
+    width: 70%;
+    animation: python 3s;
+}
+
+.csharp {
+    width: 45%;
+    animation: csharp 3s;
+}
+
+.javascript {
+    width: 60%;
+    animation: javascript 3s;
+}
+
+.sql {
+    width: 60%;
+    animation: sql 3s;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes csharp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes sql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
