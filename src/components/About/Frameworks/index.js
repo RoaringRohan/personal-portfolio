@@ -44,33 +44,27 @@ const Skills = () => {
             {skillRef.current && (
                 <>
                     <li>
-                        <h3>Java</h3>
+                        <h3>React</h3>
                         <span className="bar">
-                            <span className="java"></span>
+                            <span className="react"></span>
                         </span>
                     </li>
                     <li>
-                        <h3>Python</h3>
+                        <h3>Angular</h3>
                         <span className="bar">
-                            <span className="python"></span>
+                            <span className="angular"></span>
                         </span>
                     </li>
                     <li>
-                        <h3>C#</h3>
+                        <h3>JavaFX</h3>
                         <span className="bar">
-                            <span className="csharp"></span>
+                            <span className="javafx"></span>
                         </span>
                     </li>
                     <li>
-                        <h3>JavaScript</h3>
+                        <h3>NumPy</h3>
                         <span className="bar">
-                            <span className="javascript"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>SQL</h3>
-                        <span className="bar">
-                            <span className="sql"></span>
+                            <span className="numpy"></span>
                         </span>
                     </li>
                 </>

@@ -16,6 +16,7 @@ h3 {
     background-color: rgba(245, 197, 176, 1);
     border-radius: 20px;
     transition: box-shadow 0.3s ease; /* Add a transition for a smooth effect */
+    padding-bottom: 30px;
 }
 
 .skill li {
@@ -41,41 +42,31 @@ h3 {
     background: linear-gradient(135deg, rgba(170, 165, 225, 1) 0%, rgba(252, 103, 103, 1) 100%);
 }
 
-.java {
-    width: 90%;
-    animation: java 3s;
+.aws {
+    width: 80%;
+    animation: aws 3s;
 }
 
-.python {
+.gcp {
     width: 70%;
-    animation: python 3s;
+    animation: gcp 3s;
 }
 
-.csharp {
-    width: 45%;
-    animation: csharp 3s;
+.azure {
+    width: 65%;
+    animation: azure 3s;
 }
 
-.javascript {
-    width: 60%;
-    animation: javascript 3s;
-}
-
-.sql {
-    width: 60%;
-    animation: sql 3s;
-}
-
-@keyframes java {
+@keyframes aws {
     0% {
         width: 0%;
     }
     100% {
-        width: 90%;
+        width: 80%;
     }
 }
 
-@keyframes python {
+@keyframes gcp {
     0% {
         width: 0%;
     }
@@ -84,29 +75,11 @@ h3 {
     }
 }
 
-@keyframes csharp {
+@keyframes azure {
     0% {
         width: 0%;
     }
     100% {
-        width: 45%;
-    }
-}
-
-@keyframes javascript {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes sql {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
+        width: 65%;
     }
 }
