@@ -5,12 +5,7 @@ const Work = () => {
 
     return (
         <div className="container experience">
-            <div className="text-zone">
-                <h1>Experience</h1>
-            </div>
-            <div>
-                <Timeline />
-            </div>
+            <Timeline />
         </div>
     );
 }
