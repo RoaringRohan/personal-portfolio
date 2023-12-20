@@ -1,6 +1,4 @@
-import './index.scss';
 import React from 'react';
-import SchoolProject from '../../../assets/images/SchoolProject.png';
 import { Data } from './data';
 import HorizontalScroll from "./horizontal-scroll";
 import styled from "styled-components";
@@ -29,27 +27,91 @@ const SampleCard = styled.div`
   background-color: #111f30;
   margin-right: 75px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  overflow: visible; /* Ensure that overflow is visible for the Timeline to be displayed */
+  border-radius: 15px; /* Added rounded corners */
 `;
 
-const SampleCards = React.memo(() =>
-  Array(5)
-    .fill(0)
-    .map((_e, i) => <SampleCard key={`sampleCard-${i}`} />)
-);
+const ExperienceDetails = styled.div`
+  color: #fff;
+`;
 
-const Projects = () => {
+const CompanyLogo = styled.img`
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+`;
 
-    return (
-        <div className="projects">
-            <HorizontalSection>
+// New styled component for the timeline
+const Timeline = styled.div`
+  position: absolute;
+  top: 50%;
+  right: 100%; /* Position to the left of the SampleCard */
+  height: 2px;
+  width: 60px; /* Adjust the width for a longer line */
+  background-color: #FF5733; /* Line color */
+  transform: translateY(-50%);
+`;
+
+const Work = () => {
+  return (
+    <div className="work">
+      <HorizontalSection>
         <HorizontalScroll>
           <CardsContainer>
-            <SampleCards />
+            {/* Replace SampleCards with your work experiences */}
+            <SampleCard>
+              <CompanyLogo src="path-to-your-logo1.png" alt="Company Logo 1" />
+              <ExperienceDetails>
+                <h3>Your Position Title</h3>
+                <p>Your Company</p>
+                <p>Start Date - End Date</p>
+                <p>
+                  Your job description and details about your experience go
+                  here.
+                </p>
+              </ExperienceDetails>
+              <Timeline /> {/* Add the timeline within the SampleCard */}
+            </SampleCard>
+
+            {/* Repeat the above block for each work experience */}
+            {/* SampleCard for Experience 2 */}
+            <SampleCard>
+              <CompanyLogo src="path-to-your-logo2.png" alt="Company Logo 2" />
+              <ExperienceDetails>
+                <h3>Position Title 2</h3>
+                <p>Company 2</p>
+                <p>Start Date 2 - End Date 2</p>
+                <p>Description for Experience 2</p>
+              </ExperienceDetails>
+              <Timeline /> {/* Add the timeline within the SampleCard */}
+            </SampleCard>
+
+            <SampleCard>
+              <CompanyLogo src="path-to-your-logo2.png" alt="Company Logo 2" />
+              <ExperienceDetails>
+                <h3>Position Title 2</h3>
+                <p>Company 2</p>
+                <p>Start Date 2 - End Date 2</p>
+                <p>Description for Experience 2</p>
+              </ExperienceDetails>
+              <Timeline /> {/* Add the timeline within the SampleCard */}
+            </SampleCard>
+
+            
+
+            {/* Repeat for the remaining experiences */}
+            {/* ... */}
+
           </CardsContainer>
         </HorizontalScroll>
       </HorizontalSection>
-        </div>
-    );
-}
+    </div>
+  );
+};
 
-export default Projects;
+export default Work;
