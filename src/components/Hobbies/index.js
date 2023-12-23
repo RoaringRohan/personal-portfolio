@@ -1,12 +1,11 @@
 import './index.scss';
+import Spline from '@splinetool/react-spline';
 
 const Hobbies = () => {
 
     return (
         <div className="container hobbies">
-            <div className="text-zone">
-                <h1>Hobbies</h1>
-            </div>
+            <Spline scene="https://prod.spline.design/0obsWM19WLvpaZwN/scene.splinecode" />
         </div>
     );
 }
