@@ -34,7 +34,8 @@ const Nav = () => {
     }, []);
 
     return (
-        <div className={`navbar ${isLoaded ? 'loaded' : ''} ${isNavVisible ? '' : 'hidden'}`}>
+        <div className="container nav">
+            <div className={`navbar ${isLoaded ? 'loaded' : ''} ${isNavVisible ? '' : 'hidden'}`}>
             <ul>
                 <li><NavLink exact to="/work">Work</NavLink></li>
                 <li><NavLink exact to="/about">About</NavLink></li>
@@ -46,6 +47,7 @@ const Nav = () => {
                     <img src={Logo} alt="Logo" className="logo" />
                 </Link>
             </div>
+        </div>
         </div>
     );
 }

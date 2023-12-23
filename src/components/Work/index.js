@@ -4,7 +4,7 @@ import Timeline from './Timeline';
 const Work = () => {
 
     return (
-        <div className="container experience">
+        <div className="container work">
             <Timeline />
         </div>
     );

@@ -16,7 +16,8 @@ const Home = () => {
     }, []);
 
     return (
-        <div className={`container home-page ${isLoaded ? 'loaded' : ''}`}>
+        <div className="container home">
+            <div className={`container home-page ${isLoaded ? 'loaded' : ''}`}>
             <div className="portrait">
                 <Portrait />
             </div>
@@ -35,6 +36,7 @@ const Home = () => {
             <div className="project-accordion">
                 <Projects />
             </div>
+        </div>
         </div>
     );
 }
