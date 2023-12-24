@@ -1,32 +1,14 @@
 .contact {
-  top: 15rem;
+  margin-top: 10%;
 
-  .form-group {
-    margin-bottom: 15px;
+  h1 {
+    text-align: left;
+    font-weight: 600; /* Adjust the font weight as needed, e.g., 400 for normal, 700 for bold */
+    font-size: 75px;
   }
 
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .form-group input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-
-  .form-group textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-
-  .form-group button {
-    padding: 8px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  h2 {
+    max-width: 300px; /* Adjust the maximum width as needed */
+    /* You can also add other styles as needed */
   }
 }
