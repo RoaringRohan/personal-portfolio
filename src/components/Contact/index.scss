@@ -1,14 +1,27 @@
 .contact {
-  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
 
-  h1 {
+  .text-zone {
     text-align: left;
-    font-weight: 600; /* Adjust the font weight as needed, e.g., 400 for normal, 700 for bold */
-    font-size: 75px;
+    padding: 5rem;
+
+    h1 {
+      font-weight: 600;
+      font-size: 75px;
+      max-width: 60%;
+    }
+
+    h2 {
+      max-width: 70%;
+    }
   }
 
-  h2 {
-    max-width: 300px; /* Adjust the maximum width as needed */
-    /* You can also add other styles as needed */
+  .input {
+    width: 40%;
+    margin-top: 4%;
+    padding: 8rem;
+    margin-right: 10rem;
   }
 }
