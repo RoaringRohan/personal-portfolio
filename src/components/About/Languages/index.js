@@ -36,45 +36,47 @@ const Skills = () => {
     };
 
     return (
-        <div
+        <div className="language">
+            <div
             className="skill"
             ref={skillRef}
             style={{ boxShadow: calculateBoxShadow() }}
-        >
-            {skillRef.current && (
-                <>
-                    <li>
-                        <h3>Java</h3>
-                        <span className="bar">
-                            <span className="java"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>Python</h3>
-                        <span className="bar">
-                            <span className="python"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>C#</h3>
-                        <span className="bar">
-                            <span className="csharp"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>JavaScript</h3>
-                        <span className="bar">
-                            <span className="javascript"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>SQL</h3>
-                        <span className="bar">
-                            <span className="sql"></span>
-                        </span>
-                    </li>
-                </>
-            )}
+            >
+                {skillRef.current && (
+                    <>
+                        <li>
+                            <h3>Java</h3>
+                            <span className="bar">
+                                <span className="java"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>Python</h3>
+                            <span className="bar">
+                                <span className="python"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>C#</h3>
+                            <span className="bar">
+                                <span className="csharp"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>JavaScript</h3>
+                            <span className="bar">
+                                <span className="javascript"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>SQL</h3>
+                            <span className="bar">
+                                <span className="sql"></span>
+                            </span>
+                        </li>
+                    </>
+                )}
+            </div>
         </div>
     );
 };

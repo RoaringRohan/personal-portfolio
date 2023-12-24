@@ -64,7 +64,7 @@ const Line = styled.div`
 
 const Timeline = () => {
   return (
-    <div className="work">
+    <div className="container work">
       <HorizontalSection>
         <HorizontalScroll>
           <CardsContainer>

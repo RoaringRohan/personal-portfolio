@@ -36,39 +36,41 @@ const Skills = () => {
     };
 
     return (
-        <div
+        <div className="frame">
+            <div
             className="skill"
             ref={skillRef}
             style={{ boxShadow: calculateBoxShadow() }}
-        >
-            {skillRef.current && (
-                <>
-                    <li>
-                        <h3>React</h3>
-                        <span className="bar">
-                            <span className="react"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>Angular</h3>
-                        <span className="bar">
-                            <span className="angular"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>JavaFX</h3>
-                        <span className="bar">
-                            <span className="javafx"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>NumPy</h3>
-                        <span className="bar">
-                            <span className="numpy"></span>
-                        </span>
-                    </li>
-                </>
-            )}
+            >
+                {skillRef.current && (
+                    <>
+                        <li>
+                            <h3>React</h3>
+                            <span className="bar">
+                                <span className="react"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>Angular</h3>
+                            <span className="bar">
+                                <span className="angular"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>JavaFX</h3>
+                            <span className="bar">
+                                <span className="javafx"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>NumPy</h3>
+                            <span className="bar">
+                                <span className="numpy"></span>
+                            </span>
+                        </li>
+                    </>
+                )}
+            </div>
         </div>
     );
 };

@@ -1,82 +1,82 @@
-.project-container {
+.project {
     margin-top: 80rem; /* Shift the Projects component down by 20rem */
     margin-bottom: 20rem;
-}
 
-.accordion body {
-    padding: 0;
-    margin-top: 60%;
-    font-family: sans-serif;
-    
-}
-.accordion {
-    max-width: 990px;
-    background: rgba(0, 0, 0, 0.10);
-    height: 300px;
-    margin: 20px auto;
-    display: flex;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
-    flex-direction: row;
-    cursor: pointer;
-    margin-bottom: 100px;
-}
-.box {
-    position: relative;
-    height: 100%;
-    flex: 1;
-    background-position: left;
-    background-size: cover;
-    transition: .7s;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
-}
-.box:hover{
-    flex: 7;
-    height: 400px;
-}
-.a1 {
-    background-image: url("../../../assets/images/SchoolProject.png");
-}
-.a2 {
-    background-image: url("../../../assets/images/SchoolProject.png");
-}
-.a3 {
-    background-image: url("../../../assets/images/SchoolProject.png");
-}
-.a4 {
-    background-image: url("../../../assets/images/NumberIdentificationPython.png");
-}
-
-.accordion p {
-    font-weight: normal;
-    font-family: 'Exo 2', sans-serif;
-}
-.text {
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    padding: 10px;
-}
-.box:hover .text{
-    opacity:1;
-}
-.accordion h1 {
-    width: 250px;
-    text-align: center;
-    margin: 100px auto 20px auto;
-}
-@media screen and (max-width: 800px){
-    body{
-        margin: 0;
+    .accordion body {
+        padding: 0;
+        margin-top: 60%;
+        font-family: sans-serif;
+        
     }
     .accordion {
-        flex-direction: column;
-        height: 700px;
-        box-shadow: none;
+        max-width: 990px;
+        background: rgba(0, 0, 0, 0.10);
+        height: 300px;
+        margin: 20px auto;
+        display: flex;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+        flex-direction: row;
+        cursor: pointer;
+        margin-bottom: 100px;
     }
     .box {
-        box-shadow: none;
+        position: relative;
+        height: 100%;
+        flex: 1;
+        background-position: left;
+        background-size: cover;
+        transition: .7s;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
     }
-    .box:hover {
+    .box:hover{
         flex: 7;
+        height: 400px;
+    }
+    .a1 {
+        background-image: url("../../../assets/images/SchoolProject.png");
+    }
+    .a2 {
+        background-image: url("../../../assets/images/SchoolProject.png");
+    }
+    .a3 {
+        background-image: url("../../../assets/images/SchoolProject.png");
+    }
+    .a4 {
+        background-image: url("../../../assets/images/NumberIdentificationPython.png");
+    }
+    
+    .accordion p {
+        font-weight: normal;
+        font-family: 'Exo 2', sans-serif;
+    }
+    .text {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        padding: 10px;
+    }
+    .box:hover .text{
+        opacity:1;
+    }
+    .accordion h1 {
+        width: 250px;
+        text-align: center;
+        margin: 100px auto 20px auto;
+    }
+    @media screen and (max-width: 800px){
+        body{
+            margin: 0;
+        }
+        .accordion {
+            flex-direction: column;
+            height: 700px;
+            box-shadow: none;
+        }
+        .box {
+            box-shadow: none;
+        }
+        .box:hover {
+            flex: 7;
+        }
     }
 }

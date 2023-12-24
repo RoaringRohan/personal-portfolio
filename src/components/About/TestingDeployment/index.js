@@ -36,33 +36,35 @@ const Skills = () => {
     };
 
     return (
-        <div
-            className="skill"
-            ref={skillRef}
-            style={{ boxShadow: calculateBoxShadow() }}
-        >
-            {skillRef.current && (
-                <>
-                    <li>
-                        <h3>Amazon Web Services</h3>
-                        <span className="bar">
-                            <span className="aws"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>Google Cloud Platform</h3>
-                        <span className="bar">
-                            <span className="gcp"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <h3>Azure</h3>
-                        <span className="bar">
-                            <span className="azure"></span>
-                        </span>
-                    </li>
-                </>
-            )}
+        <div className="test">
+            <div
+                className="skill"
+                ref={skillRef}
+                style={{ boxShadow: calculateBoxShadow() }}
+            >
+                {skillRef.current && (
+                    <>
+                        <li>
+                            <h3>Amazon Web Services</h3>
+                            <span className="bar">
+                                <span className="aws"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>Google Cloud Platform</h3>
+                            <span className="bar">
+                                <span className="gcp"></span>
+                            </span>
+                        </li>
+                        <li>
+                            <h3>Azure</h3>
+                            <span className="bar">
+                                <span className="azure"></span>
+                            </span>
+                        </li>
+                    </>
+                )}
+            </div>
         </div>
     );
 };

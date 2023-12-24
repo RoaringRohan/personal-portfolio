@@ -60,9 +60,11 @@ const Portrait = () => {
     };
 
     return (
-        <div className={`portrait-container ${hasLoaded ? 'loaded' : ''}`}>
-            <div className="glitch-effect">
-                {renderGlitchImage(showImage)}
+        <div className="portraits">
+            <div className={`portrait-container ${hasLoaded ? 'loaded' : ''}`}>
+                <div className="glitch-effect">
+                    {renderGlitchImage(showImage)}
+                </div>
             </div>
         </div>
     );
