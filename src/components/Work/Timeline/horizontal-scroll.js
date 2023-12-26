@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
 const TallOuterContainer = styled.div.attrs(({ dynamicHeight }) => ({
-  style: { height: `${dynamicHeight}px` }
+  style: { height: `${dynamicHeight}px` },
 }))`
   position: relative;
   width: 100%;
@@ -17,14 +17,14 @@ const StickyInnerContainer = styled.div`
 `;
 
 const HorizontalTranslateContainer = styled.div.attrs(({ translateX }) => ({
-  style: { transform: `translateX(${translateX}px)` }
+  style: { transform: `translateX(${translateX}px)` },
 }))`
   position: absolute;
   height: 100%;
   will-change: transform;
 `;
 
-const calcDynamicHeight = objectWidth => {
+const calcDynamicHeight = (objectWidth) => {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
   return objectWidth - vw + vh + 150;
@@ -37,13 +37,23 @@ const handleDynamicHeight = (ref, setDynamicHeight) => {
 };
 
 const applyScrollListener = (ref, setTranslateX) => {
-  window.addEventListener("scroll", () => {
-    const offsetTop = -ref.current.offsetTop;
-    setTranslateX(offsetTop);
-  });
+  const handleScroll = () => {
+    if (ref.current) {
+      const offsetTop = -ref.current.offsetTop;
+      setTranslateX(offsetTop);
+    }
+  };
+
+  // Add the event listener
+  window.addEventListener("scroll", handleScroll);
+
+  // Clean up the event listener when the component is unmounted
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
 };
 
-export default ({ children }) => {
+const HorizontalScroll = ({ children }) => {
   const [dynamicHeight, setDynamicHeight] = useState(null);
   const [translateX, setTranslateX] = useState(0);
 
@@ -57,7 +67,12 @@ export default ({ children }) => {
   useEffect(() => {
     handleDynamicHeight(objectRef, setDynamicHeight);
     window.addEventListener("resize", resizeHandler);
-    applyScrollListener(containerRef, setTranslateX);
+    const cleanupScrollListener = applyScrollListener(containerRef, setTranslateX);
+
+    return () => {
+      window.removeEventListener("resize", resizeHandler);
+      cleanupScrollListener();
+    };
   }, []);
 
   return (
@@ -70,3 +85,5 @@ export default ({ children }) => {
     </TallOuterContainer>
   );
 };
+
+export default HorizontalScroll;
