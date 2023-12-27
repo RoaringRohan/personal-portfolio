@@ -1,0 +1,38 @@
+/* index.scss */
+.container {
+    /* Your existing container styles */
+  
+    .footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+  
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+  
+        p {
+          margin-bottom: 10px;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            margin-bottom: 5px;
+  
+            a {
+              color: #333;
+              text-decoration: none;
+  
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
