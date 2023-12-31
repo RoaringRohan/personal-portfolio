@@ -3,24 +3,33 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <p>Check out my other websites:</p>
-        <ul>
-          <li>
-            <a href="https://example1.com" target="_blank" rel="noopener noreferrer">
-              Example 1
-            </a>
-          </li>
-          <li>
-            <a href="https://example2.com" target="_blank" rel="noopener noreferrer">
-              Example 2
-            </a>
-          </li>
-          {/* Add more links as needed */}
-        </ul>
-      </div>
-    </footer>
+    <div className="container foot">
+      <footer className="footer">
+        <div className="footer-content">
+          <h2>Rohan
+            <br />
+            Datta
+          </h2>
+          <ul>
+            <li>
+              <a href="https://github.com/RoaringRohan" target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dattarohan/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://www.chess.com/member/roaringrohan" target="_blank" rel="noopener noreferrer">
+                Chess
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   );
 };
 
