@@ -52,6 +52,7 @@
 
         .project-text-content {
             padding: 20px;
+            width: 100%;
         }
     }
 
@@ -63,6 +64,7 @@
 
         .project-text-content {
             padding: 20px;
+            width: 100%;
         }
     }
 
@@ -76,6 +78,7 @@
 
         .project-text-content {
             padding: 20px;
+            width: 100%;
         }
     }
 
@@ -89,10 +92,16 @@
 
         .project-text-content {
             padding: 20px;
+            width: 100%;
         }
     }
 
     .project-gap {
         width: 1rem;
     }
+    
+    a {
+        color: #333;
+        text-decoration: none;
+      }
 }
