@@ -24,7 +24,7 @@ const CardsContainer = styled.div`
 
 const SampleCard = styled.div`
     position: relative;
-    height: 300px;
+    height: 500px;
     width: 500px;
     background-color: rgba(170, 165, 225);
     margin-right: 75px;
@@ -74,10 +74,15 @@ const Timeline = () => {
                 <h3>IT Technician Co-Op</h3>
                 <p>Septodont - Novocol Pharma</p>
                 <p>Sept. 2023 - Apr. 2024</p>
-                <p>
-                  Your job description and details about your experience go
-                  here.
-                </p>
+                <ul>
+                  <li>Managed Azure services for efficient identity and access management.</li>
+                  <li>Oversaw onboarding of new tech, from unboxing to imaging, ensuring smooth setups.</li>
+                  <li>Researched and prepared new hardware/software for integration into the existing infrastructure.</li>
+                  <li>Utilized Power BI for creating insightful infographics, exploring API integration.</li>
+                  <li>Developed PowerShell skills for IT automation and workflow optimization.</li>
+                  <li>Conducted Remote Desktop connections using various tools for remote issue resolution.</li>
+                  <li>Troubleshot software issues, including VPN, OneDrive sync, and printer drivers, demonstrating strong problem-solving abilities.</li>
+                </ul>
               </ExperienceDetails>
             </SampleCard>
 
@@ -87,7 +92,14 @@ const Timeline = () => {
                 <h3>IT Modernization Initiatives Co-Op</h3>
                 <p>City of Orillia</p>
                 <p>Jun. 2022 - Aug. 2022</p>
-                <p>Description for Experience 2</p>
+                <ul>
+                  <li>Automated HR onboarding, enhancing new employee integration.</li>
+                  <li>Researched and reported on technology upgrades for strategic planning.</li>
+                  <li>Maintained intranet server backups for Business Resumption Plan.</li>
+                  <li>Managed retention plans and backup schedules for dedicated servers.</li>
+                  <li>Engaged directly with stakeholders/clients, presenting new software/hardware products and gathering valuable feedback.</li>
+                  <li>Contributed to SCRUM setting with daily meetings for collaborative software engineering projects.</li>
+                </ul>
               </ExperienceDetails>
               <Line />
             </SampleCard>
@@ -98,7 +110,15 @@ const Timeline = () => {
                 <h3>Packaging Summer Student</h3>
                 <p>PepsiCo - FritoLay</p>
                 <p>Jun. 2021 - Aug. 2021</p>
-                <p>Description for Experience 2</p>
+                <ul>
+                  <li>Ensured top-tier bag quality through certifications.</li>
+                  <li>Maintained plant cleanliness, including Covid-19 protocols, via Sanitation Inspections.</li>
+                  <li>Used safe packaging techniques for efficient bag packing.</li>
+                  <li>Aided in the Warehouse, contributing to automated palletizing.</li>
+                  <li>Navigated forklift zones safely while collaborating with the team.</li>
+                  <li>Conducted cleaning on machines and managed waste disposal.</li>
+                  <li>Collaborated to meet packaging quotas efficiently.</li>
+                </ul>
               </ExperienceDetails>
               <Line />
             </SampleCard>
