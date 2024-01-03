@@ -4,19 +4,19 @@
     .languages {
         position: absolute;
         top: 15%;
-        left: 5%;
+        left: 15%;
     }
     
     .frameworks {
         position: absolute;
         top: 70%;
-        right: 5%;
+        right: 15%;
     }
     
     .testingdeployment {
         position: absolute;
         top: 125%;
-        left: 5%;
+        left: 15%;
     }
     
     .text-zone-1 {
@@ -24,10 +24,9 @@
         top: 22%;
         right: 10%;
         width: 40%;
-        text-align: center;
     }
     
-    .text-zone-1 p {
+    .text-zone-1 ul {
         line-height: 2; /* Adjust the value as needed */
     }
     
@@ -36,10 +35,9 @@
         top: 73%;
         left: 10%;
         width: 40%;
-        text-align: center;
     }
     
-    .text-zone-2 p {
+    .text-zone-2 ul {
         line-height: 2; /* Adjust the value as needed */
     }
     
@@ -48,10 +46,9 @@
         top: 130%;
         right: 10%;
         width: 40%;
-        text-align: center;
     }
     
-    .text-zone-3 p {
+    .text-zone-3 ul {
         line-height: 2; /* Adjust the value as needed */
     }
 }
