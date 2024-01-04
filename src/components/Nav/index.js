@@ -36,18 +36,18 @@ const Nav = () => {
     return (
         <div className="container nav">
             <div className={`navbar ${isLoaded ? 'loaded' : ''} ${isNavVisible ? '' : 'hidden'}`}>
-            <ul>
-                <li><NavLink exact to="/work">Work</NavLink></li>
-                <li><NavLink exact to="/about">About</NavLink></li>
-                <li><NavLink exact to="/hobbies">Hobbies</NavLink></li>
-                <li><NavLink exact to="/contact">Contact</NavLink></li>
-            </ul>
-            <div className="logo-container">
-                <Link to="/">
-                    <img src={Logo} alt="Logo" className="logo" />
-                </Link>
+                <ul>
+                    <li><NavLink exact to="/work">Work</NavLink></li>
+                    <li><NavLink exact to="/about">About</NavLink></li>
+                    <li><NavLink exact to="/hobbies">Hobbies</NavLink></li>
+                    <li><NavLink exact to="/contact">Contact</NavLink></li>
+                </ul>
+                <div className="logo-container">
+                    <Link to="/">
+                        <img src={Logo} alt="Logo" className="logo" />
+                    </Link>
+                </div>
             </div>
-        </div>
         </div>
     );
 }
