@@ -18,25 +18,25 @@ const Home = () => {
     return (
         <div className="container home">
             <div className={`container home-page ${isLoaded ? 'loaded' : ''}`}>
-            <div className="portrait">
-                <Portrait />
+                <div className="portrait">
+                    <Portrait />
+                </div>
+                <div className="text-zone">
+                    <h1>
+                        <span>Hey,</span>
+                        <br />
+                        <span>I'm Rohan!</span>
+                    </h1>
+                    <h2>Software Engineer / Full-Stack Developer</h2>
+                    <h4>Western University UNDGRAD - 2025</h4>
+                </div>
+                <div className="project-intro">
+                    <h3>Here's all the projects that I've worked on in the past.</h3>
+                </div>
+                <div className="project-accordion">
+                    <Projects />
+                </div>
             </div>
-            <div className="text-zone">
-                <h1>
-                    <span>Hey,</span>
-                    <br />
-                    <span>I'm Rohan!</span>
-                </h1>
-                <h2>Software Engineer / Full-Stack Developer</h2>
-                <h4>Western University UNDGRAD - 2025</h4>
-            </div>
-            <div className="project-intro">
-                <h3>Here's all the projects that I've worked on in the past.</h3>
-            </div>
-            <div className="project-accordion">
-                <Projects />
-            </div>
-        </div>
         </div>
     );
 }
