@@ -56,6 +56,33 @@
                 transform: translateY(0);
             }
         }
-    }
+
+        @media only screen and (max-width: 450px) {
+            .portrait {
+                padding-right: 20px;
+            }
     
+            .text-zone {
+                top: 23%;
+                width: 60%;
+            }
+    
+            h1 {
+                font-size: 8vw;
+            }
+
+            h2 {
+                font-size: 3vw;
+                width: 85%;
+            }
+        }
+    
+        @media only screen and (min-width: 768px) and (max-width: 1440px) {
+            
+        }
+    
+        @media only screen and (min-width: 1441px) {
+            
+        }
+    }
 }

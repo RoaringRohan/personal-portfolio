@@ -43,19 +43,19 @@ const Portrait = () => {
     const renderGlitchImage = (imageIndex) => {
         switch (imageIndex) {
             case 1:
-                return <img src={Pix1} alt="Glitch" style={{borderRadius: '50%'}} />;
+                return <img src={Pix1} alt="Glitch" style={{borderRadius: '50%', objectFit: 'cover', width: '100%', height: '100%'}} />;
             case 2:
-                return <img src={Pix2} alt="Glitch" style={{borderRadius: '50%'}} />;
+                return <img src={Pix2} alt="Glitch" style={{borderRadius: '50%', objectFit: 'cover', width: '100%', height: '100%'}} />;
             case 3:
-                return <img src={Pix3} alt="Glitch" style={{borderRadius: '50%'}} />;
+                return <img src={Pix3} alt="Glitch" style={{borderRadius: '50%', objectFit: 'cover', width: '100%', height: '100%'}} />;
             case 4:
-                return <img src={Pix4} alt="Glitch" style={{borderRadius: '50%'}} />;
+                return <img src={Pix4} alt="Glitch" style={{borderRadius: '50%', objectFit: 'cover', width: '100%', height: '100%'}} />;
             case 5:
-                return <img src={Pix5} alt="Glitch" style={{borderRadius: '50%'}} />;
+                return <img src={Pix5} alt="Glitch" style={{borderRadius: '50%', objectFit: 'cover', width: '100%', height: '100%'}} />;
             case 6:
-                return <img src={Pix6} alt="Glitch" style={{borderRadius: '50%'}} />;
+                return <img src={Pix6} alt="Glitch" style={{borderRadius: '50%', objectFit: 'cover', width: '100%', height: '100%'}} />;
             default:
-                return <img src={Picture} alt="My Face" style={{borderRadius: '50%'}} />;
+                return <img src={Picture} alt="My Face" style={{borderRadius: '50%', objectFit: 'cover', width: '100%', height: '100%'}} />;
         }
     };
 
