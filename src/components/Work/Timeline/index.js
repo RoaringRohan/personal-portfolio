@@ -40,6 +40,10 @@ const SampleCard = styled.div`
 
 const ExperienceDetails = styled.div`
     color: #fff;
+
+    @media only screen and (max-width: 450px) {
+        font-size: 4vw;
+    }
 `;
 
 const CompanyLogo = styled.img`

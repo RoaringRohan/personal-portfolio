@@ -69,7 +69,7 @@
             }
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 1440px) {
+        @media only screen and (min-width: 768px) and (max-width: 1750px) {
             ul {
                 margin-top: 2.5vw; /* Use vw for responsive margin */
                 margin-right: 2vw; /* Use vw for responsive margin */
@@ -113,7 +113,7 @@
             }
         }
 
-        @media only screen and (min-width: 1441px) {
+        @media only screen and (min-width: 1751px) {
             .logo-container .logo {
                 width: 7vw; /* Use vw for responsive width */
                 height: auto;
