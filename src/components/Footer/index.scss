@@ -50,5 +50,19 @@
         }
       }
     }
+
+    @media only screen and (max-width: 450px) {
+      h2 {
+        margin-left: 58vw;
+        font-size: 8vw;
+        line-height: 9vw;
+        float: left;
+      }
+
+      .footer-content {
+        font-size: 3vw;
+        margin-right: 10vw;
+      }
+    }
   }
 }

@@ -46,10 +46,6 @@
             transform: translateY(-50px);
         }
     
-        .project-accordion {
-            
-        }
-    
         &.loaded {
             .portrait, .text-zone, .project-intro, .project-accordion {
                 opacity: 1;
@@ -80,16 +76,6 @@
                 font-size: 4vw;
                 width: 80%;
             }
-        }
-    
-        @media only screen and (min-width: 768px) and (max-width: 1440px) {
-            .project-accordion {
-                
-            }
-        }
-    
-        @media only screen and (min-width: 1441px) {
-            
         }
     }
 }
