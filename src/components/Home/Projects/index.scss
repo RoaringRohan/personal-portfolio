@@ -103,5 +103,107 @@
     a {
         color: #333;
         text-decoration: none;
-      }
+    }
+
+    @media only screen and (max-width: 450px) {
+        .project-one {
+            margin-left: 7vw;
+            margin-top: -90vw;
+            width: 35vw;
+            height: 90vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 2vw;
+            }
+        }
+
+        .project-two {
+            margin-top: -90vw;
+            width: 45vw;
+            height: 50vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 2vw;
+            }
+        }
+
+        .project-three {
+            margin-left: 45vw;
+            margin-top: -45vw;
+            width: 45vw;
+            height: 50vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 2vw;
+            }
+        }
+
+        .project-four {
+            margin-left: 7vw;
+            margin-top: 0vw;
+            width: 85vw;
+            height: 50vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 2vw;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1750px) {
+        .project-one {
+            margin-left: 6vw;
+            margin-top: -15vw;
+            width: 40vw;
+            height: 70vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 1.25vw;
+            }
+        }
+
+        .project-two {
+            margin-top: -15vw;
+            width: 45vw;
+            height: 30vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 1.25vw;
+            }
+        }
+
+        .project-three {
+            margin-left: 49vw;
+            margin-top: -40vw;
+            width: 45vw;
+            height: 45vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 1.25vw;
+            }
+        }
+
+        .project-four {
+            margin-left: 6vw;
+            margin-top: -3vw;
+            width: 88vw;
+            height: 30vw;
+
+            .project-text-content {
+                padding: 2px;
+                font-size: 1.25vw;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1750px) {
+        
+    }
 }
