@@ -1,27 +1,27 @@
 .about {
-    margin-bottom: 80%;
+    margin-bottom: 90%;
 
     .languages {
         position: absolute;
-        top: 15%;
+        top: 20%;
         left: 15%;
     }
     
     .frameworks {
         position: absolute;
-        top: 70%;
+        top: 75%;
         right: 15%;
     }
     
     .testingdeployment {
         position: absolute;
-        top: 125%;
+        top: 130%;
         left: 15%;
     }
     
     .text-zone-1 {
         position: absolute;
-        top: 22%;
+        top: 30%;
         right: 10%;
         width: 40%;
     }
@@ -32,7 +32,7 @@
     
     .text-zone-2 {
         position: absolute;
-        top: 73%;
+        top: 80%;
         left: 10%;
         width: 40%;
     }
@@ -43,12 +43,90 @@
     
     .text-zone-3 {
         position: absolute;
-        top: 130%;
+        top: 135%;
         right: 10%;
         width: 40%;
     }
     
     .text-zone-3 ul {
         line-height: 2; /* Adjust the value as needed */
+    }
+
+    @media only screen and (max-width: 450px) {
+        margin-bottom: 930%;
+        
+        .text-zone-1 {
+            top: 110%;
+            left: 4%;
+            width: 85%;
+        }
+        
+        .text-zone-2 {
+            top: 280%;
+            left: 4%;
+            width: 85%;
+        }
+
+        .text-zone-3 {
+            top: 465%;
+            left: 4%;
+            width: 85%;
+        }
+
+        .languages {
+            top: 25%;
+            left: 10%;
+        }
+        
+        .frameworks {
+            top: 195%;
+            left: 10%;
+        }
+        
+        .testingdeployment {
+            top: 385%;
+            left: 10%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1750px) {
+        margin-bottom: 100%;
+        
+        .text-zone-1 {
+            top: 35%;
+            right: 10%;
+            width: 35%;
+        }
+        
+        .text-zone-2 {
+            top: 95%;
+            left: 10%;
+            width: 35%;
+        }
+
+        .text-zone-3 {
+            top: 160%;
+            right: 10%;
+            width: 35%;
+        }
+
+        .languages {
+            top: 25%;
+            left: 12%;
+        }
+        
+        .frameworks {
+            top: 95%;
+            right: 12%;
+        }
+        
+        .testingdeployment {
+            top: 155%;
+            left: 12%;
+        }
+    }
+
+    @media only screen and (min-width: 1751px) {
+        
     }
 }

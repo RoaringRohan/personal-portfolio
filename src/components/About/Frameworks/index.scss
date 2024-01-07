@@ -1,8 +1,4 @@
 .frame {
-    h1 {
-        text-align: center;
-    }
-    
     h3 {
         margin: 5px;
     }
@@ -99,4 +95,14 @@
         }
     }
     
+    @media only screen and (max-width: 450px) {
+        h3 {
+            font-size: 4vw;
+            font-weight: 500;
+        }
+
+        .skill {
+            width: 71vw;
+        }
+    }
 }
