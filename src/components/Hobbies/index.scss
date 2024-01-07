@@ -1,3 +1,16 @@
 .hobbies {
-    margin-top: 5%;
+    margin-bottom: 40%;
+
+    p {
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 450px) {
+        margin-bottom: 150%;
+
+        p {
+            margin-top: 60%;
+        }
+    }
 }

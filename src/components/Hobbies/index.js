@@ -23,7 +23,7 @@ const Hobbies = () => {
         <div className="container hobbies">
             {loading ? (
                 // Display loading message or spinner while data is being fetched
-                <p>Loading, this may take 30 seconds...</p>
+                <p>Loading, this may take up to 30 seconds...</p>
             ) : (
                 // Render the Spline component once data is loaded
                 <Spline scene="https://prod.spline.design/0obsWM19WLvpaZwN/scene.splinecode" />
