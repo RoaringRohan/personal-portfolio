@@ -9,12 +9,13 @@
 
     h1 {
       font-weight: 600;
-      font-size: 75px;
+      font-size: 5vw;
       max-width: 60%;
     }
 
     h2 {
       max-width: 70%;
+      font-size: 1.5vw;
     }
   }
 
@@ -23,5 +24,69 @@
     margin-top: 4%;
     padding: 8rem;
     margin-right: 10rem;
+  }
+
+  @media only screen and (max-width: 450px) {
+    margin-bottom: 80%;
+    margin-top: 25%;
+    
+    .text-zone {
+      padding: 3rem;
+
+      h1 {
+        font-size: 8vw;
+      }
+
+      h2 {
+        font-weight: 100;
+        font-size: 3.5vw;
+      }
+    }
+
+    .input {
+      margin-top: 20%;
+      width: 100%;
+      padding: 0rem;
+      margin-right: 4rem;
+      
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1750px) {
+    margin-bottom: 15%;
+    margin-top: 4%;
+    
+    .text-zone {
+      margin-left: 10%;
+
+      h2 {
+        font-weight: 100;
+      }
+    }
+
+    .input {
+      margin-top: 12%;
+      width: 60%;
+      padding: 1rem;
+    }
+  }
+
+  @media only screen and (min-width: 1751px) {
+    margin-bottom: 15%;
+    
+    .text-zone {
+      margin-left: 10%;
+
+      h2 {
+        font-weight: 100;
+      }
+    }
+
+    .input {
+      margin-top: 12%;
+      width: 60%;
+      padding: 1rem;
+      margin-right: 12rem;
+    }
   }
 }

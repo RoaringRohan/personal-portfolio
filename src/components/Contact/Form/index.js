@@ -26,6 +26,12 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Check if required fields are empty
+    if (!formData.name || !formData.email || !formData.message) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
     // Send formData to your server or perform any necessary actions
     emailjs.send(serviceID, templateID, formData)
       .then(() => {
