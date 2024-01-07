@@ -5,7 +5,7 @@ import './index.scss';
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 const Skills = () => {
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const [mousePosition, setMousePosition] = useState({ x: -1, y: -1 });
     const skillRef = useRef(null);
 
     useEffect(() => {
@@ -42,28 +42,26 @@ const Skills = () => {
                 ref={skillRef}
                 style={{ boxShadow: calculateBoxShadow() }}
             >
-                {skillRef.current && (
-                    <>
-                        <li>
-                            <h3>Amazon Web Services</h3>
-                            <span className="bar">
-                                <span className="aws"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <h3>Google Cloud Platform</h3>
-                            <span className="bar">
-                                <span className="gcp"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <h3>Azure</h3>
-                            <span className="bar">
-                                <span className="azure"></span>
-                            </span>
-                        </li>
-                    </>
-                )}
+                <>
+                    <li>
+                        <h3>Amazon Web Services</h3>
+                        <span className="bar">
+                            <span className="aws"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Google Cloud Platform</h3>
+                        <span className="bar">
+                            <span className="gcp"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Azure</h3>
+                        <span className="bar">
+                            <span className="azure"></span>
+                        </span>
+                    </li>
+                </>
             </div>
         </div>
     );

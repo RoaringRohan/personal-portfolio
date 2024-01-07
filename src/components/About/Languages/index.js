@@ -5,7 +5,7 @@ import './index.scss';
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 const Skills = () => {
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const [mousePosition, setMousePosition] = useState({ x: -1, y: -1 });
     const skillRef = useRef(null);
 
     useEffect(() => {
@@ -38,44 +38,42 @@ const Skills = () => {
     return (
         <div className="language">
             <div
-            className="skill"
-            ref={skillRef}
-            style={{ boxShadow: calculateBoxShadow() }}
+                className="skill"
+                ref={skillRef}
+                style={{ boxShadow: calculateBoxShadow() }}
             >
-                {skillRef.current && (
-                    <>
-                        <li>
-                            <h3>Java</h3>
-                            <span className="bar">
-                                <span className="java"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <h3>Python</h3>
-                            <span className="bar">
-                                <span className="python"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <h3>C#</h3>
-                            <span className="bar">
-                                <span className="csharp"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <h3>JavaScript</h3>
-                            <span className="bar">
-                                <span className="javascript"></span>
-                            </span>
-                        </li>
-                        <li>
-                            <h3>SQL</h3>
-                            <span className="bar">
-                                <span className="sql"></span>
-                            </span>
-                        </li>
-                    </>
-                )}
+                <>
+                    <li>
+                        <h3>Java</h3>
+                        <span className="bar">
+                            <span className="java"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>Python</h3>
+                        <span className="bar">
+                            <span className="python"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>C#</h3>
+                        <span className="bar">
+                            <span className="csharp"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>
+                        <span className="bar">
+                            <span className="javascript"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <h3>SQL</h3>
+                        <span className="bar">
+                            <span className="sql"></span>
+                        </span>
+                    </li>
+                </>
             </div>
         </div>
     );
