@@ -29,8 +29,8 @@ const Skills = () => {
         const maxDeviation = 20;
 
         // Use a higher multiplier for quicker response to mouse movement
-        const xOffset = clamp((x - offsetLeft - offsetWidth / 2) / 15, -maxDeviation, maxDeviation);
-        const yOffset = clamp((y - offsetTop - offsetHeight / 2) / 15, -maxDeviation, maxDeviation);
+        const xOffset = clamp((x - offsetLeft - offsetWidth) / 5, -maxDeviation, maxDeviation);
+        const yOffset = clamp((y - offsetTop - offsetHeight) / 5, -maxDeviation, maxDeviation);
 
         return `${xOffset}px ${yOffset}px 0px 0px black`;
     };
