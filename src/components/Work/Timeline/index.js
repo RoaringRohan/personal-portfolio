@@ -85,7 +85,7 @@ const Timeline = () => {
                   <li>Utilized Power BI for creating insightful infographics, exploring API integration.</li>
                   <li>Developed PowerShell skills for IT automation and workflow optimization.</li>
                   <li>Conducted Remote Desktop connections using various tools for remote issue resolution.</li>
-                  <li>Troubleshot software issues, including VPN, OneDrive sync, and printer drivers, demonstrating strong problem-solving abilities.</li>
+                  <li>Troubleshoot software issues, including VPN, OneDrive sync, and printer drivers, demonstrating strong problem-solving abilities.</li>
                 </ul>
               </ExperienceDetails>
             </SampleCard>
